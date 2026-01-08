@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js and React, showcasing my work, skills, and experience as a software engineer. Features a clean design with dark mode support and smooth animations.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 16** (App Router)
+- **React 19**
+- **Tailwind CSS 4**
+- **React Icons**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## React Concepts and Notes
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1. **Component Architecture**
+   - Modular, reusable components (Navbar, Hero, Skills, Experience, Portfolio)
+   - Component composition and separation of concerns
+   - Single Responsibility Principle applied to each component
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. **React Hooks**
+   - **useState**: Managing component state (theme, scroll position, mounted state)
+   - **useEffect**: Side effects (localStorage sync, scroll listeners, Intersection Observer setup)
+   - **useRef**: Direct DOM references for Intersection Observer and element access
+   - **useContext**: Consuming theme context across components
 
-## Learn More
+### 3. **Context API**
+   - Custom `ThemeProvider` component for global theme management
+   - Context creation with `createContext`
+   - Custom hook (`useTheme`) for consuming context with error handling
+   - Proper context provider pattern with value passing
 
-To learn more about Next.js, take a look at the following resources:
+### 4. **Client Components**
+   - Proper use of `'use client'` directive for interactive components
+   - Server/Client component separation in Next.js App Router
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 5. **Event Handling**
+   - Click handlers for theme toggle
+   - Scroll event listeners with proper cleanup
+   - Form interactions and navigation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 6. **Conditional Rendering**
+   - Theme-based icon switching (sun/moon)
+   - Conditional class application based on state
+   - Responsive visibility (hidden on mobile, visible on desktop)
 
-## Deploy on Vercel
+### 7. **List Rendering**
+   - Dynamic rendering with `.map()` for skills, experience, and projects
+   - Proper `key` prop usage for list items
+   - Dynamic styling based on array index
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 8. **Props & Data Flow**
+   - Data separation in `portfolioData.js` file
+   - Props passed from parent to child components
+   - Data imported and consumed across components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 9. **Side Effects & Lifecycle**
+   - `useEffect` with dependency arrays
+   - Cleanup functions for event listeners and observers
+   - Mount/unmount lifecycle management
+
+### 10. **DOM Manipulation**
+   - Intersection Observer API for scroll animations
+   - Direct DOM class manipulation for animations
+   - localStorage integration for theme persistence
+
+### 11. **Performance Optimization**
+   - Proper dependency arrays in `useEffect`
+   - Event listener cleanup to prevent memory leaks
+   - Observer cleanup on component unmount
+
+### 12. **Modern React Patterns**
+   - Functional components throughout
+   - Custom hooks for reusable logic
+   - Component composition over inheritance
+
+
