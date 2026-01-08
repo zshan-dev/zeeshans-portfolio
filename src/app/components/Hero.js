@@ -36,7 +36,7 @@ export default function Hero() {
           Software Engineer
         </h1>
         <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-8 animate-slide-up animation-delay-200">
-          Full-Stack Developer | AI Enthusiast | IBM Z Ambassador
+          Full-Stack Developer | Software Developer @ Checklick | IBM Z Ambassador
         </p>
         <p className="text-lg text-gray-500 dark:text-gray-500 mb-12 max-w-2xl mx-auto animate-slide-up animation-delay-400">
           Building modern web applications with React, Next.js, and cloud technologies.

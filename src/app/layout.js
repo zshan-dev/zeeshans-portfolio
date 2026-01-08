@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Portfolio - Software Engineer",
-  description: "Full-Stack Developer | AI Enthusiast | IBM Z Ambassador",
+  description: "Full-Stack Developer | Software Developer @ Checklick | IBM Z Ambassador",
+  icons: {
+    icon: [],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -23,6 +26,22 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme') || 'light';
+                  if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
         <ThemeProvider>
           {children}
         </ThemeProvider>

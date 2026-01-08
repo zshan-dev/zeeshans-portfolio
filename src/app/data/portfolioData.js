@@ -51,7 +51,7 @@ export const workExperience = [
     id: 1,
     position: "Software Engineering Intern - Web Development",
     company: "Checklick",
-    date: "December 2024 – February 2025",
+    date: "December 2025 – February 2026",
     description: "Built and refactored React-based interfaces, creating responsive modal components, data management interfaces, and standardized UI elements. Refactored code to integrate shared component libraries and eliminate code duplication, improving maintainability and establishing reusable patterns across the application. Implemented mobile-first responsive layouts using Tailwind CSS, ensuring UI/UX consistency across all devices through standardized styling and compatibility testing. Followed agile development methodologies with iterative development cycles, code reviews, and component-based architecture which delivered production-ready features that align with project standards and improve code quality.",
     techStack: [
       { icon: SiReact, name: "React", color: "#61DAFB" },

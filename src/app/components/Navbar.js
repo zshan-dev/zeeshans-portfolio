@@ -57,6 +57,7 @@ export default function Navbar() {
               onClick={toggleTheme}
               className="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
               aria-label="Toggle theme"
+              type="button"
             >
               {theme === 'light' ? (
                 <FiMoon className="w-5 h-5" />

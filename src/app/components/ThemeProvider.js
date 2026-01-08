@@ -9,17 +9,36 @@ export function ThemeProvider({ children }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    // Get saved theme or default to light
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
-    document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+    
+    // Apply theme to document
+    const html = document.documentElement;
+    html.classList.remove('light', 'dark');
+    html.classList.add(savedTheme);
+    html.setAttribute('data-theme', savedTheme);
+    
+    setMounted(true);
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    
+    // Apply to html element
+    const html = document.documentElement;
+    
+    // Remove first, then add to ensure clean state
+    html.classList.remove('light', 'dark');
+    html.classList.add(newTheme);
+    
+    // Also set as data attribute as backup
+    html.setAttribute('data-theme', newTheme);
+    
+    // Force repaint
+    void html.offsetHeight;
   };
 
   return (
