@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio - Software Engineer",
+  title: "Portfolio - Zeeshan Bombaywala",
   description: "Full-Stack Developer | Software Developer @ Checklick | IBM Z Ambassador",
   icons: {
     icon: [],

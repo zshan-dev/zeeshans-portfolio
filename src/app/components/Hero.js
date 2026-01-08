@@ -33,7 +33,7 @@ export default function Hero() {
     >
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 animate-slide-up">
-          Software Engineer
+          Zeeshan Bombaywala
         </h1>
         <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-8 animate-slide-up animation-delay-200">
           Full-Stack Developer | Software Developer @ Checklick | IBM Z Ambassador

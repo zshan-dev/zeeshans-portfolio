@@ -49,7 +49,7 @@ export const skills = [
 export const workExperience = [
   {
     id: 1,
-    position: "Software Engineering Intern - Web Development",
+    position: "Software Developer - Web Development",
     company: "Checklick",
     date: "December 2025 – February 2026",
     description: "Built and refactored React-based interfaces, creating responsive modal components, data management interfaces, and standardized UI elements. Refactored code to integrate shared component libraries and eliminate code duplication, improving maintainability and establishing reusable patterns across the application. Implemented mobile-first responsive layouts using Tailwind CSS, ensuring UI/UX consistency across all devices through standardized styling and compatibility testing. Followed agile development methodologies with iterative development cycles, code reviews, and component-based architecture which delivered production-ready features that align with project standards and improve code quality.",
@@ -131,6 +131,16 @@ export const portfolioProjects = [
     link: "https://github.com/zshan-dev/DataParsing",
     techStack: [
       { icon: SiC, name: "C", color: "#A8B9CC" }
+    ]
+  },
+  {
+    id: "5",
+    title: "Auto Nav Bot - Self-Navigating Robot",
+    description: "A self-navigating robot that collects environmental data using multiple sensors including ultrasonic distance, gas detection (LPG, CO, Smoke), temperature, and humidity sensors. Features obstacle avoidance, real-time data display on LCD, and remote Bluetooth control. Built with Arduino UNO, integrated MQ-2 gas sensor, DHT11 sensor, HC-SR04 ultrasonic sensor, servo motor, and L298N motor driver. Includes comprehensive 37-page documentation covering circuit design, programming, and assembly.",
+    link: "https://docs.google.com/document/d/1uLjSJZGQdncbeZ4jwbA8o4y43IQFU3PijnEI4YkVqd4/edit?usp=sharing",
+    techStack: [
+      { icon: SiC, name: "C++", color: "#00599C" },
+      { icon: SiC, name: "Arduino", color: "#00979D" }
     ]
   }
 ];
