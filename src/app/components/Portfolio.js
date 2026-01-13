@@ -77,16 +77,42 @@ export default function Portfolio() {
                   })}
                 </div>
 
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-medium"
-                >
-                  <FiGithub className="w-4 h-4" />
-                  <span>View on GitHub</span>
-                  <FiExternalLink className="w-3 h-3" />
-                </a>
+                <div className="flex flex-wrap items-center gap-3">
+                  {project.githubLink ? (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-medium"
+                    >
+                      <FiGithub className="w-4 h-4" />
+                      <span>GitHub</span>
+                      <FiExternalLink className="w-3 h-3" />
+                    </a>
+                  ) : project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-medium"
+                    >
+                      <FiGithub className="w-4 h-4" />
+                      <span>View on GitHub</span>
+                      <FiExternalLink className="w-3 h-3" />
+                    </a>
+                  ) : null}
+                  {project.devpostLink && (
+                    <a
+                      href={project.devpostLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 transition-colors font-medium"
+                    >
+                      <span>Devpost</span>
+                      <FiExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

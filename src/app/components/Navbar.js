@@ -35,12 +35,6 @@ export default function Navbar() {
           
           <div className="flex items-center gap-4">
             <a
-              href="#skills"
-              className="hidden sm:block text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
-            >
-              Skills
-            </a>
-            <a
               href="#experience"
               className="hidden sm:block text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
             >

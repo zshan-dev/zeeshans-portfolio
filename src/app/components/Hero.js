@@ -38,11 +38,6 @@ export default function Hero() {
         <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-8 animate-slide-up animation-delay-200">
           Full-Stack Developer | Software Developer @ Checklick | IBM Z Ambassador
         </p>
-        <p className="text-lg text-gray-500 dark:text-gray-500 mb-12 max-w-2xl mx-auto animate-slide-up animation-delay-400">
-          Building modern web applications with React, Next.js, and cloud technologies.
-          Passionate about AI integration and enterprise solutions.
-        </p>
-        
         <div className="flex items-center justify-center gap-6 mb-16 animate-slide-up animation-delay-600">
           <a
             href="https://github.com/zshan-dev"
@@ -72,7 +67,7 @@ export default function Hero() {
         </div>
 
         <a
-          href="#skills"
+          href="#experience"
           className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors animate-bounce"
         >
           <span>Explore</span>

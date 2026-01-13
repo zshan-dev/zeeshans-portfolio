@@ -1,4 +1,3 @@
-import { FiCode, FiServer, FiCloud, FiCpu } from 'react-icons/fi';
 import { 
   SiJavascript, 
   SiPhp, 
@@ -16,35 +15,11 @@ import {
   SiFirebase,
   SiVercel,
   SiAmazon,
-  SiOpenai
+  SiOpenai,
+  SiNodedotjs,
+  SiExpress,
+  SiGoogle
 } from 'react-icons/si';
-
-export const skills = [
-  {
-    id: "1",
-    icon: FiCode,
-    title: "Front-End Development",
-    description: "Expert in building responsive, modern web interfaces using React.js, Next.js, HTML5, CSS3, and JavaScript. Experienced with Tailwind CSS for mobile-first responsive layouts and creating reusable component libraries."
-  },
-  {
-    id: "2",
-    icon: FiServer,
-    title: "Back-End & Full-Stack",
-    description: "Proficient in PHP, MySQL, SQL for server-side logic and data persistence. Built secure full-stack applications with authentication, session management, and role-based access control. Experience with Node.js and RESTful APIs."
-  },
-  {
-    id: "3",
-    icon: FiCloud,
-    title: "AI & Cloud Development",
-    description: "Built and deployed AI-powered applications using OpenAI API, React, Next.js, and Firebase. Implemented CI/CD practices with Vercel and AWS. Created production-ready AI chatbots with 60% automation rate."
-  },
-  {
-    id: "4",
-    icon: FiCpu,
-    title: "Enterprise & Mainframe",
-    description: "IBM Z Student Ambassador with expertise in COBOL, JCL, Zowe CLI, Unix System Services, and REXX. Experienced in mainframe automation, Docker, Python scripting, and contributing to IBM Z open source projects."
-  }
-];
 
 export const workExperience = [
   {
@@ -91,6 +66,22 @@ export const workExperience = [
 export const portfolioProjects = [
   {
     id: "1",
+    title: "Frontline - 10-Second Biometric & Visual Analysis",
+    description: "🏆 Deltahacks 12 Hackathon Winner - A full-stack web application performing instant 'Touchless Triage' using camera-based biometric sensing and AI-powered visual analysis. Features 10-second biometric scans (heart rate, breathing rate, consciousness detection), Google Gemini Vision for injury detection, intelligent diagnosis combining vitals data, and ER-ready incident reports. Built with React, Node.js, Express, C++ Presage Engine, Docker, and integrates ElevenLabs text-to-speech for audio first aid instructions.",
+    githubLink: "https://github.com/zshan-dev/frontline",
+    devpostLink: "",
+    techStack: [
+      { icon: SiReact, name: "React", color: "#61DAFB" },
+      { icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
+      { icon: SiNodedotjs, name: "Node.js", color: "#339933" },
+      { icon: SiExpress, name: "Express", color: "#000000" },
+      { icon: SiC, name: "C++", color: "#00599C" },
+      { icon: SiDocker, name: "Docker", color: "#2496ED" },
+      { icon: SiGoogle, name: "Gemini AI", color: "#4285F4" }
+    ]
+  },
+  {
+    id: "2",
     title: "BookMate - Full Stack Booking Platform",
     description: "Developed a full-stack booking platform in a team of 3 for a local landscaping business, reducing workload by 150+ hours. Built with JavaScript, PHP, MySQL, HTML, and CSS. Implemented secure authentication, session management, role-based access control, and real-time calendar updates using AJAX and FullCalendar API. Managed 200+ bookings with improved response speed.",
     link: "https://github.com/zshan-dev/bangyourhead",
@@ -103,7 +94,7 @@ export const portfolioProjects = [
     ]
   },
   {
-    id: "2",
+    id: "3",
     title: "RAG-AI Customer Support Bot",
     description: "AI-powered customer support chatbot using Next.js, React, Tailwind CSS, and OpenRouter API. Uses Retrieval Augmented Generation (RAG) and vector databases for highly tailored responses. Automates 60% of user inquiries, reducing average response time from minutes to seconds.",
     link: "https://github.com/zshan-dev/RagAI-Customer-Support",
@@ -115,7 +106,7 @@ export const portfolioProjects = [
     ]
   },
   {
-    id: "3",
+    id: "4",
     title: "Cyber Swing",
     description: "A 3D parkour/runner game built in Unity with physics-based mechanics. Developed core gameplay systems including grappling hook swinging mechanics with realistic pendulum physics, wall-running, dynamic camera systems, and checkpoint/respawn systems. Created custom shaders using HLSL and ShaderLab for visual effects. Designed and implemented challenging levels with progressive difficulty. Showcases expertise in 3D game development, physics programming, and Unity engine architecture.",
     link: "https://github.com/zshan-dev/Cyber-Swing",
@@ -125,7 +116,7 @@ export const portfolioProjects = [
     ]
   },
   {
-    id: "4",
+    id: "5",
     title: "High-Performance CSV Data Parser",
     description: "A high-performance C application for ingesting large CSV datasets (1.7M+ records) with streaming I/O and in-memory hash indexing. Implemented separate chaining hash table with DJB2 hash function for O(1) average lookup time, achieving 2,600x speedup over linear search (0.84s vs 0.0003s). Features memory-efficient streaming CSV parsing, dynamic array growth, and comprehensive benchmarking with load factor analysis. Demonstrates expertise in systems programming, data structures, and performance optimization.",
     link: "https://github.com/zshan-dev/DataParsing",
@@ -134,7 +125,7 @@ export const portfolioProjects = [
     ]
   },
   {
-    id: "5",
+    id: "6",
     title: "Auto Nav Bot - Self-Navigating Robot",
     description: "A self-navigating robot that collects environmental data using multiple sensors including ultrasonic distance, gas detection (LPG, CO, Smoke), temperature, and humidity sensors. Features obstacle avoidance, real-time data display on LCD, and remote Bluetooth control. Built with Arduino UNO, integrated MQ-2 gas sensor, DHT11 sensor, HC-SR04 ultrasonic sensor, servo motor, and L298N motor driver. Includes comprehensive 37-page documentation covering circuit design, programming, and assembly.",
     link: "https://docs.google.com/document/d/1uLjSJZGQdncbeZ4jwbA8o4y43IQFU3PijnEI4YkVqd4/edit?usp=sharing",
@@ -142,5 +133,5 @@ export const portfolioProjects = [
       { icon: SiC, name: "C++", color: "#00599C" },
       { icon: SiC, name: "Arduino", color: "#00979D" }
     ]
-  }
+  },
 ];
