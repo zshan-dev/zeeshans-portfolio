@@ -69,7 +69,7 @@ export const portfolioProjects = [
     title: "Frontline - 10-Second Biometric & Visual Analysis",
     description: "🏆 Deltahacks 12 Hackathon Winner - A full-stack web application performing instant 'Touchless Triage' using camera-based biometric sensing and AI-powered visual analysis. Features 10-second biometric scans (heart rate, breathing rate, consciousness detection), Google Gemini Vision for injury detection, intelligent diagnosis combining vitals data, and ER-ready incident reports. Built with React, Node.js, Express, C++ Presage Engine, Docker, and integrates ElevenLabs text-to-speech for audio first aid instructions.",
     githubLink: "https://github.com/zshan-dev/frontline",
-    devpostLink: "",
+    devpostLink: "https://devpost.com/software/frontline-noyxp0",
     techStack: [
       { icon: SiReact, name: "React", color: "#61DAFB" },
       { icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
