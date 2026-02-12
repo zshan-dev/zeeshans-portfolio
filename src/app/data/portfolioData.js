@@ -101,6 +101,7 @@ export const portfolioProjects = [
     title: "AgentsArena - Minecraft LLM Testing Toolkit",
     description: "🏆 Winning submission at Google Developer Groups McMaster Mac-a-Thon 2026. Adversarial multi-agent testing for LLMs in observable 3D Minecraft environments—like a stress test for AI before production. Features 6 behavioural agent profiles (Leader, Non-Cooperator, Confuser, Resource-Hoarder, etc.), real-time dashboard with live metrics and Discord voice (ElevenLabs TTS), OpenRouter integration for 400+ models, and evaluation reports with cooperation score, task completion, and communication quality. Built with TypeScript, Bun, Elysia, React, Vite, shadcn/ui, Mineflayer, Discord.js, Prisma/PostgreSQL.",
     link: "https://github.com/zshan-dev/AgentsArena",
+    devpostLink: "https://devpost.com/software/agentarena-y4snd2",
     techStack: [
       { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
       { icon: SiReact, name: "React", color: "#61DAFB" },
