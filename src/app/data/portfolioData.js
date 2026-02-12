@@ -19,12 +19,27 @@ import {
   SiNodedotjs,
   SiExpress,
   SiGoogle,
-  SiTypescript
+  SiTypescript,
+  SiMongodb
 } from 'react-icons/si';
 
 export const workExperience = [
   {
     id: 1,
+    position: "Full-Stack Engineer",
+    company: "LOCVM Inc.",
+    date: "February 2026 – April 2026",
+    description: "Designed and delivered a rule-based matching service that connects available jobs with suitable users based on defined criteria. Built backend APIs and servers to process structured datasets (users with work preferences and jobs with requirements), implementing ranking logic to optimize job fulfillment and identify the most qualified users. Developed data handling and processing pipelines for JSON/CSV inputs using MongoDB and NoSQL practices. Extended the platform with an admin portal front-end to visualize matches and provide tools for reviewing, filtering, and exploring results. Delivered a self-contained matching server with full GitHub repository, formal rule-based matching and monitoring strategy documentation, and comprehensive test documentation including execution and interpretation guidance. Designed and executed tests for realistic and edge-case scenarios; maintained and updated CI/CD configurations.",
+    techStack: [
+      { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
+      { icon: SiNodedotjs, name: "Node.js / APIs", color: "#339933" },
+      { icon: SiReact, name: "React", color: "#61DAFB" },
+      { icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
+      { icon: SiDocker, name: "CI/CD", color: "#2496ED" }
+    ]
+  },
+  {
+    id: 2,
     position: "Software Developer - Web Development",
     company: "Checklick",
     date: "December 2025 – February 2026",
@@ -36,7 +51,7 @@ export const workExperience = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     position: "IBM Z Student Ambassador",
     company: "IBM, YourBigYear",
     date: "September 2024 – PRESENT",
@@ -48,7 +63,7 @@ export const workExperience = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     position: "Software Engineering Fellow",
     company: "Headstarter",
     date: "June 2024 – August 2024",
@@ -90,8 +105,7 @@ export const portfolioProjects = [
       { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
       { icon: SiReact, name: "React", color: "#61DAFB" },
       { icon: SiNodedotjs, name: "Bun/Node", color: "#339933" },
-      { icon: SiOpenai, name: "OpenRouter", color: "#412991" },
-      { icon: SiDocker, name: "Docker", color: "#2496ED" }
+      { icon: SiOpenai, name: "OpenRouter", color: "#412991" }
     ]
   },
   {
