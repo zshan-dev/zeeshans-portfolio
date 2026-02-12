@@ -18,7 +18,8 @@ import {
   SiOpenai,
   SiNodedotjs,
   SiExpress,
-  SiGoogle
+  SiGoogle,
+  SiTypescript
 } from 'react-icons/si';
 
 export const workExperience = [
@@ -82,6 +83,19 @@ export const portfolioProjects = [
   },
   {
     id: "2",
+    title: "AgentsArena - Minecraft LLM Testing Toolkit",
+    description: "🏆 Winning submission at Google Developer Groups McMaster Mac-a-Thon 2026. Adversarial multi-agent testing for LLMs in observable 3D Minecraft environments—like a stress test for AI before production. Features 6 behavioural agent profiles (Leader, Non-Cooperator, Confuser, Resource-Hoarder, etc.), real-time dashboard with live metrics and Discord voice (ElevenLabs TTS), OpenRouter integration for 400+ models, and evaluation reports with cooperation score, task completion, and communication quality. Built with TypeScript, Bun, Elysia, React, Vite, shadcn/ui, Mineflayer, Discord.js, Prisma/PostgreSQL.",
+    link: "https://github.com/zshan-dev/AgentsArena",
+    techStack: [
+      { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+      { icon: SiReact, name: "React", color: "#61DAFB" },
+      { icon: SiNodedotjs, name: "Bun/Node", color: "#339933" },
+      { icon: SiOpenai, name: "OpenRouter", color: "#412991" },
+      { icon: SiDocker, name: "Docker", color: "#2496ED" }
+    ]
+  },
+  {
+    id: "3",
     title: "BookMate - Full Stack Booking Platform",
     description: "Developed a full-stack booking platform in a team of 3 for a local landscaping business, reducing workload by 150+ hours. Built with JavaScript, PHP, MySQL, HTML, and CSS. Implemented secure authentication, session management, role-based access control, and real-time calendar updates using AJAX and FullCalendar API. Managed 200+ bookings with improved response speed.",
     link: "https://github.com/zshan-dev/bangyourhead",
@@ -94,7 +108,7 @@ export const portfolioProjects = [
     ]
   },
   {
-    id: "3",
+    id: "4",
     title: "RAG-AI Customer Support Bot",
     description: "AI-powered customer support chatbot using Next.js, React, Tailwind CSS, and OpenRouter API. Uses Retrieval Augmented Generation (RAG) and vector databases for highly tailored responses. Automates 60% of user inquiries, reducing average response time from minutes to seconds.",
     link: "https://github.com/zshan-dev/RagAI-Customer-Support",
@@ -106,7 +120,7 @@ export const portfolioProjects = [
     ]
   },
   {
-    id: "4",
+    id: "5",
     title: "Cyber Swing",
     description: "A 3D parkour/runner game built in Unity with physics-based mechanics. Developed core gameplay systems including grappling hook swinging mechanics with realistic pendulum physics, wall-running, dynamic camera systems, and checkpoint/respawn systems. Created custom shaders using HLSL and ShaderLab for visual effects. Designed and implemented challenging levels with progressive difficulty. Showcases expertise in 3D game development, physics programming, and Unity engine architecture.",
     link: "https://github.com/zshan-dev/Cyber-Swing",
@@ -116,7 +130,7 @@ export const portfolioProjects = [
     ]
   },
   {
-    id: "5",
+    id: "6",
     title: "High-Performance CSV Data Parser",
     description: "A high-performance C application for ingesting large CSV datasets (1.7M+ records) with streaming I/O and in-memory hash indexing. Implemented separate chaining hash table with DJB2 hash function for O(1) average lookup time, achieving 2,600x speedup over linear search (0.84s vs 0.0003s). Features memory-efficient streaming CSV parsing, dynamic array growth, and comprehensive benchmarking with load factor analysis. Demonstrates expertise in systems programming, data structures, and performance optimization.",
     link: "https://github.com/zshan-dev/DataParsing",
@@ -125,7 +139,7 @@ export const portfolioProjects = [
     ]
   },
   {
-    id: "6",
+    id: "7",
     title: "Auto Nav Bot - Self-Navigating Robot",
     description: "A self-navigating robot that collects environmental data using multiple sensors including ultrasonic distance, gas detection (LPG, CO, Smoke), temperature, and humidity sensors. Features obstacle avoidance, real-time data display on LCD, and remote Bluetooth control. Built with Arduino UNO, integrated MQ-2 gas sensor, DHT11 sensor, HC-SR04 ultrasonic sensor, servo motor, and L298N motor driver. Includes comprehensive 37-page documentation covering circuit design, programming, and assembly.",
     link: "https://docs.google.com/document/d/1uLjSJZGQdncbeZ4jwbA8o4y43IQFU3PijnEI4YkVqd4/edit?usp=sharing",

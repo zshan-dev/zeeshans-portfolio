@@ -58,9 +58,7 @@ export default function Hero() {
             <FiLinkedin className="w-6 h-6" />
           </a>
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=zeeshanmb10@gmail.com&su=Portfolio Inquiry"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:zeeshanmb10@gmail.com"
             className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
             aria-label="Email"
           >
