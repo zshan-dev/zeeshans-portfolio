@@ -36,7 +36,7 @@ export default function Hero() {
           Zeeshan Bombaywala
         </h1>
         <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-8 animate-slide-up animation-delay-200">
-          Full-Stack Developer | Software Developer @ Checklick | IBM Z Ambassador
+         Full-Stack Engineer @ LOCVM Inc. | Prev Frontend Developer @ Checklick | IBM Z Ambassador 
         </p>
         <div className="flex items-center justify-center gap-6 mb-16 animate-slide-up animation-delay-600">
           <a
